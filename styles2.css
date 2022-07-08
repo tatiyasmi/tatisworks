@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Paytone+One&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: futura;
+    margin: 0;
+    background-color: #d1d1d1;
+  }
+  
+  .header {
+    padding: 60px;
+    text-align: center;
+    color: white;
+    height: 900px;
+  }
+
+  h1{
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+    letter-spacing: 15px;
+    font-size: 10vw;
+    margin-bottom: -20px;
+  }
+  p{
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    font-weight: light;
+    letter-spacing: 1px;
+    font-size: 2vw;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+  a{
+    color:rgb(186, 186, 186);
+    text-decoration: none;
+    font-style: italic;
+    letter-spacing: -2px;
+}
+a:hover{
+    transform: scale(1.05);
+    color:rgb(255, 255, 255);
+    font-size: 2.2vw;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+  #headertext{
+
+  }
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .side {
+    flex: 30%;
+    padding: 20px;
+  }
+  
+  .main {
+    flex: 70%;
+    padding: 20px;
+  }
+  
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  #arrow{
+    animation: blink 0.3s infinite;
+    padding: 10px;
+    font-size: 80px;
+    margin: auto;
+    margin-top: 40px;
+
+}
+@keyframes blink {
+    0%{ opacity: 0;
+        color:rgb(158, 158, 158);
+    }
+    100%{ opacity: 1;
+        color:rgb(255, 255, 255);
+    }
+}
+  
+h2{
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    font-weight: light;
+    letter-spacing: 2px;
+    font-size: 2vw;
+    line-height: 30px;
+    margin: auto;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+h3{
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    font-weight: light;
+    letter-spacing: 5px;
+    font-size: 15px;
+    line-height: 30px;
+    margin: auto;
+    color: white;
+    padding: 10px;
+}
+
+h4{
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    font-weight: light;
+    letter-spacing: 2px;
+    font-size: 2vw;
+    margin: auto;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+.main{
+    width:auto;
+    margin: auto;
+}
+
+  @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+    h1{
+        font-size: 12vw;
+        letter-spacing: 5px;
+        margin-bottom: 0px;
+        line-spacing: 10px;
+    }
+    p{
+        font-size: 5vw;
+    }
+    a:hover{
+        font-size: 5vw;}
+  }
